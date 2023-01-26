@@ -1,5 +1,5 @@
 # HRC-IITB-Latest
-This is the latest copy of the entire codebase of Ham Radio Club's Website created with love for Student Satellite Program.
+This is the latest copy of the entire codebase of Ham Radio Club's Website created with love for Student Satellite Program. [Visit Here](https://www.aero.iitb.ac.in/hrc/)
 
 # How to run this website locally?
 
