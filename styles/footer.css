@@ -1,0 +1,338 @@
+/* footer{
+    margin-top: 200px;
+}
+
+#footer-head{
+    font-size: 40px;
+    color: white;
+    font-weight: 300;
+    top: 300px;
+} */
+.ftr-img{
+    background-image: url("../img/hrc_logo.png");
+    background-position-y: 6px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+.ftr{
+    width: 100%;
+    display: flexbox;
+    flex-direction: column;
+    text-align: center;
+    font-size: 18px;
+}
+.site-footer {
+    padding: 20px 0px;
+    background: #1c1b1b;
+    color: white;
+    font-size: 18px;
+    width: 100%;
+}
+
+#footer-container {
+    width: 100%;
+    margin: 0 auto;
+    transition: all 0.2s ease;
+}
+
+#footer-grid {
+    display: flex;
+    align-items: stretch;
+    padding-bottom: 10px;
+    padding-top: 0px;
+}
+
+
+#left-footer-section {
+    flex-basis: 50%;
+    border-right: 1px solid #444444;
+    /* padding-right: 30px; */
+    text-align: center;
+}
+
+#right-footer-section {
+    flex-basis: 50%;
+    text-align: center;
+}
+
+#right-footer-sectionp{
+  text-align: left;
+}
+
+#copyright-information #footer-logo-section {
+    display: flex;
+    align-items: center;
+}
+
+#copyright-information #footer-logo {
+    width: 40px;
+    margin-right: 10px;
+    margin-left: 20px;
+}
+
+#footer-logo img {
+    width: 100%;
+}
+
+.footer-information{
+  margin-top: 20px;
+}
+.footer-information p {
+    margin-top: 10px;
+}
+
+.footer-information p:first-child {
+    margin-top: 20px;
+}
+
+.footer-information p:last-child {
+    margin-bottom: 10px;
+}
+
+.footer-information a{
+  color: white;
+  text-decoration: none;
+}
+
+.footer-information a#youtube:hover{
+  color: rgb(175, 164, 164);
+}
+
+.footer-information a#fb:hover{
+    color: rgba(0, 115, 255, 0.718);
+  }
+
+.footer-information a#lkdin:hover{
+    color: rgba(18, 1, 172, 0.976);
+  }
+
+.footer-information a#insta:hover{
+    color: rgb(245, 3, 245);
+  }
+
+.footer-information a#grey:hover{
+  color: rgb(175, 164, 164);
+}
+
+#right-footer-section ul {
+    margin: 0;
+}
+
+.footer-links ul li, .footer-links ul li a  {
+    list-style: none;
+    color: white;
+    line-height: 1em;
+    margin-bottom: 1em;
+    text-decoration: none;
+}
+
+.footer-links ul li a:hover{
+  color: rgb(175, 164, 164);
+}
+
+.footer-links ul li:last-child, .footer-links ul li a:last-child  {
+    margin-bottom: 0;
+}
+
+#right-footer-section ul li a:hover {
+    /* color: #00bdc6; */
+    transition: all 0s ease;
+}
+
+.menu-heading{
+  font-weight: bold;
+  font-size: 22px;
+  text-align: left;
+}
+
+
+
+#copyright-information {
+    border-top: 1px solid #444444;
+    padding: 30px 0 10px 0;
+    text-align: center;
+    display: flex;
+    /* align-items: center; */
+    text-align: left;
+}
+
+#copyright-information #social-buttons {
+  margin:auto;
+  text-align: center;
+}
+
+#copyright-information #social-buttons a {
+    margin-left: 0.5em;
+    cursor: pointer;
+    font-size: 18pt;
+    color: white;
+    background-color: rgba(48, 43, 43, 0.592);
+    padding:5px 15px;
+}
+
+#copyright-information #social-buttons a:hover {
+    color:  rgb(175, 164, 164);
+    transition: all 0.2s ease;
+}
+
+#copyright-text{
+  /* font-size: 15px; */
+  /* text-align: left; */
+  margin-left: 35px;
+}
+
+#copyright-information #social-buttons a.youtube:hover{
+  color: rgb(175, 164, 164);
+}
+
+
+@media (min-width:960px){
+  footer#footer-2-cols.mobile{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 960px){
+
+    .site-footer{
+        padding: 20px 0px;
+    }
+
+  footer#footer-2-cols.screen{
+    display:none;
+  }
+
+    div#footer-container {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    div#footer-grid {
+        flex-direction: column;
+        width: 480px;
+        margin: 0 auto;
+        padding-bottom: 30px;
+    }
+
+    footer#footer-2-cols div#left-footer-section {
+        border-right: 0;
+        padding-bottom: 30px;
+    }
+
+    footer#footer-2-cols div.footer-section {
+        padding-top: 30px;
+    }
+
+    footer#footer-2-cols div.footer-section:first-child {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    #right-footer-section ul {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        font-size: 12pt;
+    }
+
+    footer#footer-2-cols div#right-footer-section ul li {
+        margin: 0;
+    }
+
+    footer#footer-2-cols div#right-footer-section ul li a {
+        margin: 0;
+        display: block;
+        padding: 15px;
+        background: #2a2a2a;
+        border-bottom: 1px solid #444444;
+        text-decoration: none;
+    }
+
+    footer#footer-2-cols div#right-footer-section ul li:last-child a {
+        border-bottom: none;
+    }
+
+    footer#footer-2-cols div#footer-search input {
+        width: calc(100% - 77px);
+    }
+
+    footer#footer-2-cols div#copyright-information {
+        display: block;
+        width: 480px;
+        margin: 0 auto;
+    }
+
+    footer#footer-2-cols div#copyright-information div#social-buttons {
+        padding: 15px 0;
+    }
+
+    footer#footer-2-cols div#copyright-information div#social-buttons i.fa:first-child {
+        margin-left: 0;
+    }
+
+    footer#footer-2-cols div#copyright-information div#footer-logo-section {
+        display: block;
+        align-items: normal;
+    }
+
+    footer#footer-2-cols div#copyright-information div#footer-logo {
+        display: block;
+        width: 100%;
+        margin: 0;
+    }
+
+    footer#footer-2-cols div#copyright-information div#footer-logo img {
+        width: 30px;
+        text-align: center;
+    }
+
+    footer#footer-2-cols div#copyright-information div#copyright-text {
+        display: block;
+        text-align: center;
+        padding: 15px 0;
+    }
+
+    footer#footer-2-cols div#copyright-information div#social-buttons i.fa {
+        font-size: 24pt;
+    }
+
+    #copyright-text{
+      margin-left: 0px;
+    }
+
+    .menu-heading{
+      text-align: center;
+      padding-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    div#footer-grid {
+        width: 100%;
+    }
+
+    footer#footer-2-cols div#footer-search input {
+        width: calc(100% - 77px);
+    }
+
+    footer#footer-2-cols div.footer-information {
+        margin: 0 auto;
+    }
+
+    footer#footer-2-cols div#copyright-information {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    footer#footer-2-cols div#copyright-information div#copyright-text {
+        width: 100%;
+    }
+
+    footer#footer-2-cols div#copyright-information div#social-buttons {
+        width: 100%;
+    }
+}

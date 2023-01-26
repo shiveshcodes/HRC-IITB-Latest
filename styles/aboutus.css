@@ -1,0 +1,285 @@
+.text-box {
+  font-size: 25px;
+  text-align: left;
+  color:rgb(238, 238, 238);
+}
+
+.ham-link{
+  color: white;
+}
+
+.ham-link:hover{
+  color:rgb(172, 172, 172);
+}
+
+section h2{
+    font-size: 50px;
+    color: white;
+    text-align: left;
+  }
+  
+  section h2 span{
+    font-size: 50px;
+    font-weight: 100;
+    text-align: left;
+  }
+  
+  section .container {
+    margin: 100px;
+    margin-top: 110px;
+  }
+  
+  section .text-container{
+     display: flex;
+  }
+  
+  section .text-container .text-box{
+    background: transparent;
+  }
+  section .text-container .text-box h3{
+    font-size: 40px;
+    text-align: left;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+.img-shack{
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px white; 
+}
+
+.fix-img{
+  visibility: visible;
+  position: fixed;
+  top: 20%;
+  text-align: center !important;
+}
+
+  .reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  
+  .reveal.active{
+    position: sticky;
+    transform: translateY(-50px);
+    opacity: 1;
+  }
+  
+  .div2 .text-box p{
+    margin:0px auto;
+  }
+
+  .div2 h2{
+    margin: 15px 0px;
+  }
+
+  .div3 .container{
+    margin: 100px;
+  }
+  .div3 h1{
+    font-weight: 500;
+    font-size: 3rem;
+    margin: 20px;
+  }
+  .div3 h2{
+    font-size: 50px;
+    color: white;
+    text-align: left;
+  }
+  
+  .div3 h2 span{
+    font-size: 50px;
+    font-weight: 100;
+    text-align: left;
+  }
+  
+  .div3 .text-container{
+     display: flex;
+     flex-direction: column;
+  } s
+  
+  .div3 .text-container .text-box{
+    background: transparent;
+    text-align: left;
+  }
+  .div3 .text-container .text-box h3{
+    font-size: 40px;
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  
+  html, body, section {
+    block-size: 100%;
+  }
+  
+  section {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+  }
+  
+  .fix-img{
+    opacity: 0;
+    transition: 0s all ease;
+    visibility: visible;
+    position: fixed;
+    top: 75px;
+    padding-top: 8%;
+    text-align: center !important;
+  }
+  
+  .fix-img.active{
+    opacity: 1;
+    transition:0s all ease;
+    background: rgba(6,6,6,1);
+    z-index: 10;
+    
+  }
+  
+  .fix-img img{
+    border-radius: 20px; 
+    box-shadow: 0px 0px 20px white;
+  }
+  
+  .internal::-webkit-scrollbar {
+    display: none;
+  }
+
+
+.int-ham-img{
+  justify-content: space-between;  
+  margin: 150px 30px;
+}
+
+.img-ham{
+  display: flex;
+  flex-direction: row;
+  padding: 10px 10px;
+}
+
+.img-ham-2 > * {
+  flex: 1;
+  margin: 0px 20px;
+}
+
+
+  .cred{
+    visibility: visible;
+    display: flex; 
+    flex-direction: column; 
+    width: 100%; 
+    height: auto; 
+    align-items: flex-start; 
+    
+  }
+
+  iframe{
+    border-radius: 20px; 
+    box-shadow: 0px 0px 20px white; 
+    width: 100%; 
+    height: 100%;
+  }
+
+  @media (min-width:930px){
+
+    .cred .reveal{
+      transform: translateY(0px);
+    }
+    
+    .fix-img{
+      width: 60%;
+      visibility: hidden; 
+      position: fixed; 
+      top: 30%; 
+      right: 5%; 
+      text-align: right !important;
+      padding-top: 0%;
+    }
+
+    .fix-img.active{
+      opacity: 1;
+      transition:0s all ease;
+      background: transparent;
+      z-index: 10;
+      
+    }
+
+    .img-shack{
+      max-width:40%;
+    }
+
+    .imgshack-parent{
+      text-align: left;
+      margin-top: 50px;
+    }
+  }
+
+  @media screen and (max-width: 930px){
+    section h2{
+      margin:10px 0px;
+    }
+
+    section h2 b{
+      font-size: 30px !important;
+    }
+    
+    section h2 span{
+      font-size: 30px !important;
+    }
+
+    .text-box{
+      font-size: 18px;
+    }
+
+    section .container {
+      margin: 10px;
+      margin-top: 110px;
+    }
+
+    .img-ham{
+      flex-direction: column;
+      margin: 20px 0px;
+    }
+
+    .img-ham-2 > * {
+      flex: 1;
+      margin: 10% 20px;
+    }
+    
+    .img-shack{
+      max-width:100%;
+    }
+
+    .imgshack-parent{
+      margin-top: 80px;
+    }
+    .int-ham-img{
+      justify-content: space-between;  
+      margin: 150px 50px;
+    }
+
+      .cred {
+        width: 100% !important; 
+      }
+
+
+      section .internal {
+        margin: 10px;
+        margin-top: 200px !important;
+        margin-bottom: -10px;
+        width: auto !important;
+        height: auto;
+    }
+
+    iframe{
+      height: 280px;
+    }
+    }

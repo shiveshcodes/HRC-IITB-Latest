@@ -1,0 +1,208 @@
+    :root {
+        --card-height: 400px;
+        --card-width: 350px;
+    }
+    
+    @property --rotate {
+        syntax: "<angle>";
+        initial-value: 132deg;
+        inherits: false;
+    }
+
+    a{
+      color: #FFFFFF;
+    }
+
+    .blogstart{
+      margin-bottom: 100px;
+    }
+
+
+    .blogstart h2{
+      /* width: 100%; */
+      font-size: 50px;
+      color: white;
+      padding: 30px;
+      padding-bottom: 0px;
+      text-align: left;
+    }
+
+    .blogstart p{
+      /* width: 100%; */
+      font-size: 25px;
+      color: white;
+      padding: 0px 30px;
+    }
+
+
+  .cardwrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding-bottom: 0;
+   }
+   .card {
+     background-color: black;
+     width: var(--card-width);
+     height: var(--card-height);
+     padding: 2px;
+     margin: 15px;
+     position: relative;
+     border-radius: 6px;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     display: flex;
+     font-size: 1.5em;
+     color: white;
+     cursor: pointer;
+     /* font-family: cursive; */
+     box-shadow: 0px 0px 20px white;
+   }
+   
+   .card:hover {
+     transition: color 1s;
+     box-shadow: none;
+   }
+   
+   .card:hover:before{
+     content: "";
+     width: 350px;
+     height: 400px;
+     border-radius: 8px;
+     background-image: linear-gradient(
+       var(--rotate)
+       , #FFFFFF, #ffffffac 43%, #ffffff1a);
+       position: absolute;
+       z-index: -1;
+       /* top: -3%;
+       left: -4%; */
+       animation: spin 4s linear infinite;
+   }
+   
+   .card:hover:after {
+     position: absolute;
+     content: "";
+     left: 0;
+     right: 0;
+     z-index: -1;
+     height: 102%;
+     width: 104%;
+     margin: 0 auto;
+     transform: scale(0.8);
+     filter: blur(calc(var(--card-height) / 4));
+     background-image: linear-gradient(
+       var(--rotate)
+       , #FFFFFF, #ffffffac 43%, #ffffff1a);
+       opacity: 1;
+     transition: opacity .5s;
+     animation: spin 2s linear infinite;
+   }
+   
+   .content{
+     /* transform: translateY(50%); */
+     position: absolute;
+     bottom: 0;
+     width: 300px;
+     height: 353px;
+     overflow: hidden;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     transition: 0.5s;
+     background-color: black;
+     opacity: 0;
+     color: white;
+     flex-direction: column;
+     padding: 25px;
+     font-size: 22px;
+   }
+
+   a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+   
+   b{
+    display: block;
+     font-size: 25px;
+     font-weight: 2000;
+     text-decoration: underline;
+     padding-bottom: 20px;
+   }
+   
+   .content:hover{
+     opacity: 0.8;
+   }
+   
+   .cardimg{
+     width: 340px;
+     height: 390px;
+   }
+
+   .lasttext{
+    font-size: 25px;
+    color: white;
+    width: 80%;
+    margin: 50px auto;
+    margin-top: 0px;
+    text-align: center;
+   }
+   
+   @keyframes spin {
+     0% {
+       --rotate: 0deg;
+     }
+     100% {
+       --rotate: 360deg;
+     }
+   }
+   
+   .blogstart a.ham-link{
+    color: white;
+    text-decoration: underline;
+  }
+  
+  .blogstart a.ham-link:hover{
+    color:rgb(172, 172, 172);
+    text-decoration: underline;
+  }
+/* 
+   ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  Track
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    border-radius: 100px;
+    border-color: 10px black;
+  }
+   
+  Handle
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 100px;
+    border-color: 10px black;
+  }
+  
+  Handle on hover
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  } */
+
+  @media (max-width: 600px) {
+    h2{
+      font-size: 30px!important;
+    }
+    .blogstart p{
+      font-size: 18px ;
+      padding: 0px 10px;
+    }
+    .blogstart h2{
+      width: 100%;
+      padding: 0px 10px;
+    }
+  }

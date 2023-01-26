@@ -1,0 +1,141 @@
+:root {
+  --card-height: 600px;
+  --card-width: 550px;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+@property --rotate {
+  syntax: "<angle>";
+  initial-value: 132deg;
+  inherits: false;
+}
+
+.cardwrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5vw 10vw;
+  gap: 80px;
+}
+.card {
+  background-color: black;
+  width: var(--card-width);
+  height: var(--card-height);
+  padding: 3px;
+  position: relative;
+  border-radius: 6px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  font-size: 1.5em;
+  color: white;
+  cursor: pointer;
+  /* font-family: cursive; */
+  box-shadow: 0px 0px 20px white;
+}
+
+.card:hover {
+  transition: color 1s;
+  box-shadow: none;
+}
+
+/* .card:before{
+     content: "";
+     width: 108%;
+     height: 106%;
+     border-radius: 8px;
+     background-image: linear-gradient(
+       var(--rotate)
+       , #FFFFFF, #ffffffac 43%, #ffffff1a);
+       position: absolute;
+       z-index: -1;
+       top: -3%;
+       left: -4%;
+       animation: spin 4s linear infinite;
+   } */
+
+.card:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 102%;
+  width: 104%;
+  margin: 0 auto;
+  transform: scale(0.8);
+  filter: blur(calc(var(--card-height) / 4));
+  background-image: linear-gradient(
+    var(--rotate),
+    #ffffff,
+    #ffffffac 43%,
+    #ffffff1a
+  );
+  opacity: 1;
+  transition: opacity 0.5s;
+  animation: spin 2s linear infinite;
+}
+
+.content {
+  /* transform: translateY(50%); */
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  background-color: black;
+  opacity: 0;
+  color: white;
+  flex-direction: column;
+  padding: 70px;
+  font-size: 22px;
+  text-align: left;
+}
+
+a b {
+  font-size: 30px;
+  font-weight: 2000;
+  padding-bottom: 20px;
+  text-decoration: underline;
+  text-align: center;
+}
+
+.content:hover {
+  opacity: 0.9;
+}
+
+.cardimg {
+  width: 100%;
+  height: 100%;
+
+}
+
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+@keyframes spin {
+  0% {
+    --rotate: 0deg;
+  }
+  100% {
+    --rotate: 360deg;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  :root {
+  --card-height: 400px;
+  --card-width: 350px;
+}
+}

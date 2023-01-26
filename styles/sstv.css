@@ -1,0 +1,160 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+    color: #F5f5f5;
+    margin: 5px;
+}
+
+section.div1  {
+  justify-content: space-between;
+}
+
+section.div2{
+  min-height: 70vh;
+  margin-bottom: 40px;
+}
+
+.sstv-container{
+  padding:0px 50px;
+}
+
+.section{
+  max-width: 100vh;
+  text-align: left;
+}
+.text{
+  /* margin-left: 30px; */
+    /* padding: 30px; */
+    /* width: 100%; */
+    font-size: 25px;
+    /* text-align: left; */
+}
+
+
+.start{
+    font-size: 50px;
+    font-weight: 900;
+    /* text-align: left; */
+    /* padding-left: 50px; */
+    /* padding-bottom: 0; */
+  }
+
+  /* .images{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 30px;
+    flex-wrap: wrap;
+    width: 100%;
+  } */
+  /* .introimg{
+    width: 400px;
+    height: 300px;
+  } */
+  table{
+    width: 45%;
+    font-size: 22px;
+  }
+  td, th{
+    padding: 20px;
+    width: 800px;
+    border-bottom: 1pt solid rgba(255,255,255,.3);
+  }
+
+  td{
+    text-align: center;
+  }
+
+  .tablesideimg{
+    width: 600px;
+    height: 450px;
+    border-radius: 20px;
+  box-shadow: 0px 0px 20px white;
+  }
+
+  /* .aim-ul{
+    margin-left: 30px;
+  } */
+/* 
+  .aim{
+    padding-bottom: 0;
+  } */
+
+  button {
+    font-family: inherit;
+    font-weight: bold;
+    width: 300px;
+    height: 80px;
+    font-size: 30px;
+    padding: 9px 20px;
+    border: 1px solid  white;
+    border-radius: 10px;
+    background: transparent;
+    transition: .3s;
+    color:  white;
+    background: hsla(var(--hue), 25%, 10%, .8);
+    cursor: pointer;
+    margin-top: 40px;
+  }
+  
+  button:hover,
+  button:focus {
+    background: hsla(var(--hue), 25%, 10%, .2);
+  }
+  
+  button:active {
+    transform: translate(2px);
+  }
+
+
+  @media  (max-width: 800px) {
+
+    .sstv-container{
+      padding:0px 10px;
+    }
+    /* .introimg{
+      width: 300px;
+      height: 250px;
+    } */
+    section{
+      flex-direction: column;
+    }
+    .tablesideimg{
+      width: 300px;
+      height: 250px;
+      margin-top: 10px;
+    }
+
+    .text{
+      /* margin-left: 0;
+      padding: 20px; */
+      font-size: 18px;
+  }
+
+  /* .images{
+    padding-bottom: 30px;
+  } */
+
+  table{
+    width: 100%;
+    /* padding-bottom: 30px; */
+  }
+
+  .aim-ul{
+    padding-left: 20px;
+  }
+
+  .start{
+    font-size: 30px!important;
+    padding-top:50px;
+    /* text-align: center; */
+    padding-left: 10px;
+  }
+
+  /* .aim{
+    padding-bottom: 0;
+  } */
+  }
